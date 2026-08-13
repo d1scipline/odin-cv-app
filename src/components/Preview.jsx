@@ -3,11 +3,13 @@ import PersonalInfoPreviewContainer from "./PersonalInfoPreviewContainer";
 import SkillsPreviewContainer from "./SkillsPreviewContainer";
 import WorkExpPreviewContainer from "./WorkExpPreviewContainer";
 
-function Preview() {
+function Preview({ data }) {
   return (
     <div className="preview">
       <h1>Preview</h1>
-      <PersonalInfoPreviewContainer></PersonalInfoPreviewContainer>
+      <PersonalInfoPreviewContainer
+        personalInfo={data.personalInfo}
+      ></PersonalInfoPreviewContainer>
       <WorkExpPreviewContainer></WorkExpPreviewContainer>
       <EducationPreviewContainer></EducationPreviewContainer>
       <SkillsPreviewContainer></SkillsPreviewContainer>
