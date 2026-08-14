@@ -12,10 +12,11 @@ function App() {
       location: "",
       summary: "",
     },
-    workExp: [],
+    workExp: [], // {companyName, title, starting date, end date (empty if present), key responsibilities list }
     education: [],
     skills: [],
   });
+
   return (
     <>
       <Editor data={cvData} setData={setCvData}></Editor>
