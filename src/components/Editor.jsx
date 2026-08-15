@@ -41,6 +41,38 @@ function Editor({ data, setData }) {
     }));
   };
 
+  const addEducation = () => {
+    setData((prevData) => ({
+      ...prevData,
+      education: [
+        ...(prevData.education || []),
+        {
+          degree: "",
+          university: "",
+          startDate: null,
+          endDate: null,
+          id: crypto.randomUUID(),
+        },
+      ],
+    }));
+  };
+
+  const removeEducation = (id) => {
+    setData((prevData) => ({
+      ...prevData,
+      education: [...prevData.education.filter((item) => item.id !== id)],
+    }));
+  };
+
+  const updateEducation = (id, key, data) => {
+    setData((prevData) => ({
+      ...prevData,
+      education: prevData.education.map((item) =>
+        item.id === id ? { ...item, [key]: data } : item,
+      ),
+    }));
+  };
+
   const addSkill = (skill) => {};
 
   return (
@@ -56,7 +88,12 @@ function Editor({ data, setData }) {
         removeWorkExp={removeWorkExp}
         updateWorkExp={updateWorkExp}
       ></WorkExpInput>
-      <EducationInput></EducationInput>
+      <EducationInput
+        data={data.education}
+        addEducation={addEducation}
+        removeEducation={removeEducation}
+        updateEducation={updateEducation}
+      ></EducationInput>
       <SkillsInput data={data.skills} addSkill={addSkill}></SkillsInput>
     </div>
   );

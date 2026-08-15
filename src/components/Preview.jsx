@@ -13,7 +13,9 @@ function Preview({ data }) {
       <WorkExpPreviewContainer
         workExperience={data.workExp}
       ></WorkExpPreviewContainer>
-      <EducationPreviewContainer></EducationPreviewContainer>
+      <EducationPreviewContainer
+        education={data.education}
+      ></EducationPreviewContainer>
       <SkillsPreviewContainer></SkillsPreviewContainer>
     </div>
   );
