@@ -1,8 +1,8 @@
 function Skill({ skill, removeSkill }) {
   return (
     <div className="skill">
-      <span>{skill}</span>
-      <i></i>
+      <span>{skill.skill}</span>
+      <i onClick={() => removeSkill(skill.id)}>Remove</i>
     </div>
   );
 }

@@ -73,7 +73,25 @@ function Editor({ data, setData }) {
     }));
   };
 
-  const addSkill = (skill) => {};
+  const addSkill = (skill) => {
+    setData((prevData) => ({
+      ...prevData,
+      skills: [
+        ...prevData.skills,
+        {
+          skill: skill,
+          id: crypto.randomUUID(),
+        },
+      ],
+    }));
+  };
+
+  const removeSkill = (id) => {
+    setData((prevData) => ({
+      ...prevData,
+      skills: [...prevData.skills.filter((item) => item.id !== id)],
+    }));
+  };
 
   return (
     <div className="editor">
@@ -94,7 +112,11 @@ function Editor({ data, setData }) {
         removeEducation={removeEducation}
         updateEducation={updateEducation}
       ></EducationInput>
-      <SkillsInput data={data.skills} addSkill={addSkill}></SkillsInput>
+      <SkillsInput
+        data={data.skills}
+        addSkill={addSkill}
+        removeSkill={removeSkill}
+      ></SkillsInput>
     </div>
   );
 }

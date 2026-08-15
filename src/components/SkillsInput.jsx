@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import Skill from "./Skill";
 
-function SkillsInput({ data, addSkill }) {
+function SkillsInput({ data, addSkill, removeSkill }) {
   const inputRef = useRef(null);
 
   const handleAdd = () => {
@@ -21,7 +21,7 @@ function SkillsInput({ data, addSkill }) {
       {data.length !== 0 && (
         <div className="skills">
           {data.map((item) => (
-            <Skill skill={item}></Skill>
+            <Skill skill={item} key={item.id} removeSkill={removeSkill}></Skill>
           ))}
         </div>
       )}
