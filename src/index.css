@@ -94,6 +94,10 @@ h1 {
 }
 
 /*Borders for development purposes*/
+div {
+  border: solid 1px red;
+  margin: 2px;
+}
 
 .editor-title {
   display: flex;
@@ -128,7 +132,7 @@ h1 {
 .personal-info-sub-container-2-left {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 5px;
+  gap: 10px;
 }
 
 .personal-info-sub-container-2 input {
@@ -167,7 +171,7 @@ h1 {
 .work-experience-bottom-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 5px;
+  gap: 10px;
 }
 
 .company-name-editor,
@@ -177,6 +181,10 @@ h1 {
 .key-responsibilities-editor {
   display: flex;
   flex-direction: column;
+}
+
+.work-experience-input-items input {
+  width: 100%;
 }
 
 .key-responsibilities-editor textarea {
