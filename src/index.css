@@ -192,6 +192,32 @@ div {
   height: 120px;
 }
 
-.delete-experience {
+.delete-experience,
+.delete-education {
   align-self: flex-end;
+}
+
+.education-input-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.education-top-row,
+.education-bottom-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.degree-editor-item,
+.university-editor-item,
+.education-start-date-item,
+.education-end-date-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.education-input-item input {
+  width: 100%;
 }
