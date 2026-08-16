@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import Skill from "./Skill";
+import { Plus, Settings } from "lucide-react";
 
 function SkillsInput({ data, addSkill, removeSkill }) {
   const inputRef = useRef(null);
@@ -15,9 +16,13 @@ function SkillsInput({ data, addSkill, removeSkill }) {
 
   return (
     <div className="skills-input-container">
-      <h2>Skills</h2>
+      <div className="editor-title">
+        <Settings></Settings> <h2>Skills</h2>
+      </div>
       <input ref={inputRef} placeholder="Skill"></input>
-      <button onClick={handleAdd}>Add</button>
+      <button onClick={handleAdd} className="add-button">
+        <Plus></Plus> Add
+      </button>
       {data.length !== 0 && (
         <div className="skills">
           {data.map((item) => (

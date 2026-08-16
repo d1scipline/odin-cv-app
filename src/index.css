@@ -93,10 +93,7 @@ h1 {
   font-size: 20px;
 }
 
-div {
-  border: 1px solid red;
-  margin: 2px;
-}
+/*Borders for development purposes*/
 
 .editor-title {
   display: flex;
@@ -142,4 +139,51 @@ div {
   resize: none;
   width: 100%;
   height: 120px;
+}
+
+.add-button {
+  margin-top: 5px;
+  display: flex;
+  gap: 5px;
+}
+
+.delete-button {
+  display: flex;
+  gap: 5px;
+}
+
+.work-experience-input-items {
+  display: grid;
+  gap: 10px;
+}
+
+.work-experience-input-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.work-experience-top-container,
+.work-experience-bottom-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+.company-name-editor,
+.job-title-editor,
+.start-date-editor,
+.end-date-editor,
+.key-responsibilities-editor {
+  display: flex;
+  flex-direction: column;
+}
+
+.key-responsibilities-editor textarea {
+  resize: none;
+  height: 120px;
+}
+
+.delete-experience {
+  align-self: flex-end;
 }

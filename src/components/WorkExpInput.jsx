@@ -1,10 +1,13 @@
 import WorkExpInputItem from "./WorkExpInputItem";
+import { List, Plus } from "lucide-react";
 
 function WorkExpInput({ data, addWorkExp, removeWorkExp, updateWorkExp }) {
   return (
     <div className="work-experience-input-container">
-      <h2>Work Experience</h2>
-      <button onClick={addWorkExp}>Add</button>
+      <div className="editor-title">
+        <List></List>
+        <h2>Work Experience</h2>
+      </div>
       {data.length != 0 && (
         <div className="work-experience-input-items">
           {data.map((item) => (
@@ -17,6 +20,9 @@ function WorkExpInput({ data, addWorkExp, removeWorkExp, updateWorkExp }) {
           ))}
         </div>
       )}
+      <button onClick={addWorkExp} className="add-button">
+        <Plus></Plus>Add Entry
+      </button>
     </div>
   );
 }
