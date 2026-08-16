@@ -95,7 +95,7 @@ function Editor({ data, setData }) {
 
   return (
     <div className="editor">
-      <h1>Editor</h1>
+      <h1>CV Builder</h1>
       <PersonalInfoInput
         data={data}
         updatePersonalInfo={updatePersonalInfo}

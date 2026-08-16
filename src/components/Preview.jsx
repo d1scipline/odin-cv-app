@@ -6,7 +6,7 @@ import WorkExpPreviewContainer from "./WorkExpPreviewContainer";
 function Preview({ data }) {
   return (
     <div className="preview">
-      <h1>Preview</h1>
+      <h1>CV Preview</h1>
       <PersonalInfoPreviewContainer
         personalInfo={data.personalInfo}
       ></PersonalInfoPreviewContainer>
