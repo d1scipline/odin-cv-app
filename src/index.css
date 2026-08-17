@@ -221,3 +221,36 @@ div {
 .education-input-item input {
   width: 100%;
 }
+
+.skill-remove:hover,
+.add-button,
+.delete-button {
+  cursor: pointer;
+}
+
+.skill-input {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+}
+
+.skill {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-button {
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin: 0 !important;
+}
