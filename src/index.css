@@ -310,3 +310,59 @@ textarea:focus {
   border: none;
   outline: 1px solid rgb(132, 132, 132);
 }
+
+.work-experience-input-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.work-experience-top-container,
+.work-experience-bottom-container,
+.key-responsibilities-editor {
+  padding: 4px 0px;
+}
+
+.delete-button {
+  background-color: #f65555;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.delete-button:hover {
+  background-color: #d24040;
+}
+
+.delete-button:active {
+  background-color: #c12323;
+}
+
+.work-experience-input-item {
+  border: 1px solid #c5c5c5;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.work-experience-input-container .add-button {
+  margin: 8px !important;
+  border: none;
+  color: white;
+  background-color: #2f3d58;
+  border-radius: 5px;
+  padding: 6px;
+  font-weight: 400;
+}
+
+.work-experience-input-container .add-button:hover {
+  background-color: #3f5277;
+}
+
+.work-experience-input-container .add-button:active {
+  background-color: #27334a;
+}
