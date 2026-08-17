@@ -398,8 +398,8 @@ textarea:focus {
   border: none;
   color: white;
   background-color: #2f3d58;
-  border-radius: 5px;
-  padding: 4px;
+  border-radius: 8px;
+  padding: 4px 10px;
   font-weight: 400;
 }
 
