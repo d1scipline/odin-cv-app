@@ -311,12 +311,16 @@ textarea:focus {
   outline: 1px solid rgb(132, 132, 132);
 }
 
-.work-experience-input-container {
+.work-experience-input-container,
+.education-input-container {
   background-color: white;
   border-radius: 8px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
+.education-bottom-row,
+.education-top-row,
+.education-end-date-item,
 .work-experience-top-container,
 .work-experience-bottom-container,
 .key-responsibilities-editor {
@@ -342,6 +346,7 @@ textarea:focus {
   background-color: #c12323;
 }
 
+.education-input-item,
 .work-experience-input-item {
   border: 1px solid #c5c5c5;
   padding: 8px;
@@ -349,6 +354,7 @@ textarea:focus {
   border-radius: 8px;
 }
 
+.education-input-container .add-button,
 .work-experience-input-container .add-button {
   margin: 8px !important;
   border: none;
@@ -359,10 +365,17 @@ textarea:focus {
   font-weight: 400;
 }
 
+.education-input-container .add-button:hover,
 .work-experience-input-container .add-button:hover {
   background-color: #3f5277;
 }
 
+.education-input-container .add-button:active,
 .work-experience-input-container .add-button:active {
   background-color: #27334a;
+}
+
+.add-button,
+.delete-button {
+  font-size: 15px;
 }
