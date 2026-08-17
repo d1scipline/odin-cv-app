@@ -313,7 +313,8 @@ textarea:focus {
 
 .work-experience-input-container,
 .education-input-container,
-.skills-input-container {
+.skills-input-container,
+.personal-info-input-container {
   background-color: white;
   border-radius: 8px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -420,4 +421,15 @@ textarea:focus {
 
 .skill-remove:hover {
   color: #c12323;
+}
+
+.education-input-item {
+  margin: 8px;
+  padding: 8px;
+}
+
+.education-input-items-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
