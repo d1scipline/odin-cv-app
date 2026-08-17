@@ -94,7 +94,7 @@ h1 {
 }
 
 /*Borders for development purposes*/
-div {
+.preview div {
   border: solid 1px red;
   margin: 2px;
 }
@@ -253,4 +253,60 @@ div {
   justify-content: center;
   gap: 6px;
   margin: 0 !important;
+}
+
+.personal-info-input-container {
+  border: 1px rgb(192, 192, 192) solid;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.personal-info-sub-container-1,
+.personal-info-sub-container-2,
+.summary {
+  padding: 8px;
+}
+
+.editor-title {
+  background-color: #2f3d58;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  padding: 4px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.editor {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.editor h2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.editor svg {
+  height: 18px;
+}
+
+label {
+  font-size: 15px;
+}
+
+input,
+textarea {
+  border: 1px solid rgb(193, 193, 193);
+  border-radius: 4px;
+  padding: 2px 5px;
+  font-size: 15px;
+}
+
+input:focus,
+textarea:focus {
+  border: none;
+  outline: 1px solid rgb(132, 132, 132);
 }
