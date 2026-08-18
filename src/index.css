@@ -565,8 +565,8 @@ hr {
 
   @page {
     size: A4 portrait;
-    padding-top: 20mm;
-    padding-bottom: 20mm;
+    padding-top: 15mm;
+    padding-bottom: 15mm;
   }
 
   body {
@@ -582,7 +582,7 @@ hr {
     position: absolute !important;
     left: 0 !important;
     top: 0 !important;
-    padding: 0mm 20mm !important;
+    padding: 0mm 15mm !important;
   }
 
   div {
