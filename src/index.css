@@ -557,88 +557,35 @@ hr {
   background-color: #27334a;
 }
 
-/*Stuff to print the CV*/
-/* The code below is written by AI*/
 @media print {
-  /* 1. Set A4 size and clear default browser headers, footers, and margins */
   @page {
     size: A4 portrait;
-    margin: 0;
+    padding-top: 20mm;
+    padding-bottom: 20mm;
   }
 
-  /* 2. Lock page height to exactly 1 page and prevent unwanted scrolling/overflow */
-  html,
   body {
-    width: 100% !important;
-    height: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    overflow: hidden !important;
-    background: #ffffff !important;
-    background-color: #ffffff !important;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
+    background-color: white;
   }
 
-  /* 3. Hide all external UI elements, header, sidebars, and form sections */
-  body * {
-    visibility: hidden;
+  .editor,
+  .print-button {
+    display: none !important;
   }
 
-  /* 4. Show only the preview container and its contents */
-  .preview-container,
-  .preview-container * {
-    visibility: visible;
-  }
-
-  /* 5. Format .preview-container to fit perfectly on a single page */
   .preview-container {
     position: absolute !important;
     left: 0 !important;
     top: 0 !important;
-    width: 100% !important;
-    max-height: 100vh !important; /* Forces layout to fit strictly within 1 page height */
-    box-sizing: border-box !important;
-    padding: 15mm 20mm !important; /* Adjust margins around your CV text here */
-    margin: 0 !important;
-    background: #ffffff !important;
-    background-color: #ffffff !important;
-    box-shadow: none !important;
-    border: none !important;
-    overflow: hidden !important; /* Prevents overflow from creating page 2 */
-    page-break-after: avoid !important;
-    page-break-inside: avoid !important;
+    padding: 0mm 20mm !important;
   }
 
-  /* 6. Fix for <hr> lines looking uneven or thin */
-  .preview-container hr {
-    border: none !important;
-    height: 1.5px !important; /* Solid block height ensures crisp pixel rendering */
-    background-color: #333333 !important;
-    margin: 10px 0 !important;
-    display: block !important;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
+  div {
+    break-inside: avoid;
   }
 
-  /* 7. Remove bottom margin from the last child to prevent pushing content to page 2 */
-  .preview-container > *:last-child {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
+  hr {
+    background-color: black;
+    height: 1pt;
   }
-}
-
-/* Fix for inconsistent <hr> line thickness */
-.preview-container hr {
-  border: none !important;
-  border-top: 1pt solid #333333 !important; /* 1pt is standard for print and won't round unevenly */
-  height: 0 !important;
-  margin: 10px 0 !important;
-  display: block !important;
-  clear: both !important;
-
-  /* Forces vector snapping to avoid pixel rounding differences */
-  box-sizing: border-box !important;
-  -webkit-print-color-adjust: exact;
-  print-color-adjust: exact;
 }
