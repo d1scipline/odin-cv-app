@@ -81,9 +81,9 @@ body {
 }
 
 #root {
-  width: 80%;
+  width: 90%;
   display: grid;
-  grid-template-columns: 4fr 4fr;
+  grid-template-columns: 4fr 5fr;
   gap: 10%;
   margin: 50px 0px;
   font-family: sans-serif;
@@ -91,12 +91,6 @@ body {
 
 h1 {
   font-size: 20px;
-}
-
-/*Borders for development purposes*/
-.preview div {
-  border: solid 1px red;
-  margin: 2px;
 }
 
 .editor-title {
@@ -433,3 +427,86 @@ textarea:focus {
   flex-direction: column;
   gap: 10px;
 }
+
+.preview-container {
+  background-color: white;
+}
+
+.preview-personal-info {
+  background-color: #2f3d58;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+}
+
+.preview-personal-info span {
+  display: flex;
+  gap: 4px;
+}
+
+.preview-header-section {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 25px;
+}
+
+.preview-first-name {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.preview-title {
+  font-size: 18px;
+}
+
+.preview-summary {
+  padding: 10px 25px;
+}
+
+.preview-h2 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.work-experience-preview-container {
+  padding: 10px 25px;
+}
+
+hr {
+  margin-bottom: 8px;
+}
+
+.work-experience-preview-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.work-experience-preview-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.work-experience-preview-company {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.work-experience-preview-job-title {
+  font-size: 15px;
+}
+
+.work-experience-preview-item {
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+.preview div {
+  border: solid 1px red;
+  margin: 2px;
+}
+*/

@@ -7,16 +7,18 @@ function Preview({ data }) {
   return (
     <div className="preview">
       <h1>CV Preview</h1>
-      <PersonalInfoPreviewContainer
-        personalInfo={data.personalInfo}
-      ></PersonalInfoPreviewContainer>
-      <WorkExpPreviewContainer
-        workExperience={data.workExp}
-      ></WorkExpPreviewContainer>
-      <EducationPreviewContainer
-        education={data.education}
-      ></EducationPreviewContainer>
-      <SkillsPreviewContainer skills={data.skills}></SkillsPreviewContainer>
+      <div className="preview-container">
+        <PersonalInfoPreviewContainer
+          personalInfo={data.personalInfo}
+        ></PersonalInfoPreviewContainer>
+        <WorkExpPreviewContainer
+          workExperience={data.workExp}
+        ></WorkExpPreviewContainer>
+        <EducationPreviewContainer
+          education={data.education}
+        ></EducationPreviewContainer>
+        <SkillsPreviewContainer skills={data.skills}></SkillsPreviewContainer>
+      </div>
     </div>
   );
 }
