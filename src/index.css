@@ -525,9 +525,20 @@ hr {
   font-weight: 600;
 }
 
-/*
-.preview div {
-  border: solid 1px red;
-  margin: 2px;
+.skills-preview-container {
+  padding: 10px 25px;
+  padding-bottom: 50px;
 }
-  */
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-preview {
+  padding: 4px 8px;
+  background-color: #e5e5e5;
+  color: #27334a;
+  border-radius: 16px;
+}
