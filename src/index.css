@@ -429,6 +429,7 @@ textarea:focus {
 }
 
 .preview-container {
+  padding-top: 25px;
   background-color: white;
 }
 
@@ -504,9 +505,29 @@ hr {
   flex-direction: column;
 }
 
+.education-preview-container {
+  padding: 10px 25px;
+}
+
+.education-preview-items {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.education-preview-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.preview-degree-name {
+  font-size: 18px;
+  font-weight: 600;
+}
+
 /*
 .preview div {
   border: solid 1px red;
   margin: 2px;
 }
-*/
+  */
