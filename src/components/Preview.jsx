@@ -19,6 +19,9 @@ function Preview({ data }) {
         ></EducationPreviewContainer>
         <SkillsPreviewContainer skills={data.skills}></SkillsPreviewContainer>
       </div>
+      <button onClick={() => window.print()} className="print-button">
+        Download CV
+      </button>
     </div>
   );
 }
