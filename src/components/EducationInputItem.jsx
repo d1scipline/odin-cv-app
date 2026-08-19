@@ -33,6 +33,7 @@ export default function EducationInputItem({
         <div className="education-start-date-item">
           <label>Start Date</label>
           <input
+            placeholder="e.g., 2026-05"
             type="month"
             onChange={(e) => {
               updateEducation(data.id, "startDate", e.target.value);
@@ -43,6 +44,7 @@ export default function EducationInputItem({
         <div className="education-end-date-item">
           <label>End Date</label>
           <input
+            placeholder="e.g., 2026-05"
             type="month"
             onChange={(e) => {
               updateEducation(data.id, "endDate", e.target.value);

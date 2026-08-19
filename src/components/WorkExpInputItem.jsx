@@ -27,6 +27,7 @@ function WorkExpInputItem({ data, removeWorkExp, updateWorkExp }) {
         <div className="start-date-editor">
           <label>Start Date</label>
           <input
+            placeholder="e.g., 2026-05"
             type="month"
             onChange={(e) =>
               updateWorkExp(data.id, "startDate", e.target.value)
@@ -37,6 +38,7 @@ function WorkExpInputItem({ data, removeWorkExp, updateWorkExp }) {
         <div className="end-date-editor">
           <label>End Date</label>
           <input
+            placeholder="e.g., 2026-05"
             type="month"
             onChange={(e) => updateWorkExp(data.id, "endDate", e.target.value)}
           ></input>

@@ -1,8 +1,16 @@
 export default function EducationPreviewItem({ data }) {
   function formatDate(yyyymm) {
-    const [year, month] = yyyymm.split("-");
-    const date = new Date(year, month - 1);
-    return date.toLocaleString("default", { month: "long", year: "numeric" });
+    if (!yyyymm || !yyyymm.includes("-")) return "";
+
+    const [year, month] = yyyymm.split("-").map(Number);
+
+    const date = new Date(Date.UTC(year, month - 1));
+
+    return date.toLocaleDateString("en-US", {
+      month: "long",
+      year: "numeric",
+      timeZone: "UTC",
+    });
   }
 
   return (
