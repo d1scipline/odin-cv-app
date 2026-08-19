@@ -565,8 +565,8 @@ hr {
 
   @page {
     size: A4 portrait;
-    padding-top: 15mm;
-    padding-bottom: 15mm;
+    padding-top: 20mm;
+    padding-bottom: 20mm;
     margin: 0;
   }
 
